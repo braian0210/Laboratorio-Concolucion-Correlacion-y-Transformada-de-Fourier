@@ -37,7 +37,7 @@ Para resolver los numerales 3 y 4, se adjuntaran los códigos y gráficas elabor
 
 Integrante1-Braian 
 
-'''
+```
 import numpy as np
 import matplotlib.pyplot as plt
 h1 = np.array([5, 6, 0, 0, 8, 2, 0])
@@ -88,7 +88,7 @@ plt.xlim(-1, len(y1))
 
 plt.tight_layout()
 plt.show()
-'''
+```
 
 Integrante2 David
 
