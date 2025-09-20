@@ -31,13 +31,15 @@ Integrante3 Angélica
 
 3.Encontrar la señal 𝑦[𝑛] resultante de la convolución usando Python
 
-Integrante1-Braian
-
-Integrante2-David
-
-Integrante3-Angélica
-
 4.Encontrar la representación gráfica y secuencial usando Python. 
+
+Para resolver los numerales 3 y 4, se adjuntaran los códigos y gráficas elaborados en google colab.
+
+Integrante1-Braian 
+
+Integrante2 David
+
+Integrante3 Angélica
 
 Parte B
 
