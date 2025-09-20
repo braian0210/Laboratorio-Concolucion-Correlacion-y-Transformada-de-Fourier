@@ -90,6 +90,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+```
+<img width="1189" height="989" alt="image" src="https://github.com/user-attachments/assets/6ccedc37-190c-4d33-afe6-05cb63be16a6" />
+
+```
+
 Integrante2 David
 
 Integrante3 Angélica
