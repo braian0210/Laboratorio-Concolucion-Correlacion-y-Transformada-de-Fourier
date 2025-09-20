@@ -17,9 +17,17 @@ Para ésta parte de la práctica, teniendo en cuenta el sistema h[n] = {dígitos
 señal x[n] = {dígitos de la cédula de ciudadania} cada integrante del grupo, realizará lo siguiente:
 
 1.Encuentrar la señal 𝑦[𝑛] resultante de la convolución usando sumatorias (a
-mano). 
+mano).
 
 2.Encontrar la representación gráfica y secuencial (a mano). 
+
+A continuación se adjuntaran imágenes de los procedimientos que realizó cada uno de los integrantes para el desarrollo de los numerales 1 y 2.
+
+Integrante1-Braian 
+
+Integrante2 David
+
+Integrante3 Angélica
 
 3.Encontrar la señal 𝑦[𝑛] resultante de la convolución usando Python
 
