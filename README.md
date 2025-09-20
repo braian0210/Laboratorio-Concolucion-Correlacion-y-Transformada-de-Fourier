@@ -10,7 +10,18 @@ respuesta de un sistema discreto ante una entrada determinada.
 dominio de la frecuencia. 
 
 Resumen
+```
+graficacaptura = pd.read_csv("/content/drive/Shareddrives/Labs procesamiento de señales/Lab 2/datos_parteC3.csv")
 
+# Graficar la señal
+plt.figure(figsize=(15, 3)) # Increased the width to 12
+plt.plot(graficacaptura, label="Señal ECG")
+plt.xlabel("(800muestras/seg)")
+plt.ylabel("Amplitud (V)")
+plt.title("Señal EOG Capturada")
+plt.legend()
+plt.show()
+```
 Parte A
 
 Para ésta parte de la práctica, teniendo en cuenta el sistema h[n] = {dígitos del código del carnet estudiantil } y la
