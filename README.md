@@ -10,18 +10,7 @@ respuesta de un sistema discreto ante una entrada determinada.
 dominio de la frecuencia. 
 
 Resumen
-```
-graficacaptura = pd.read_csv("/content/drive/Shareddrives/Labs procesamiento de señales/Lab 2/datos_parteC3.csv")
 
-# Graficar la señal
-plt.figure(figsize=(15, 3)) # Increased the width to 12
-plt.plot(graficacaptura, label="Señal ECG")
-plt.xlabel("(800muestras/seg)")
-plt.ylabel("Amplitud (V)")
-plt.title("Señal EOG Capturada")
-plt.legend()
-plt.show()
-```
 Parte A
 
 Para ésta parte de la práctica, teniendo en cuenta el sistema h[n] = {dígitos del código del carnet estudiantil } y la
@@ -69,8 +58,48 @@ Para la parte c, con ayuda del generador de señales biológicas, se generará u
 
 1.Determinar la frecuencia de Nyquist para la señal generada
 
-2.Digitalizar la señal usando una frecuencia de muestreo de 4 veces la
-frecuencia de Nyquist
+Tomando la frecuencia maxima de 100 y como Fnyquist es 2 veces Fmaxima, entonces Fnyquist es de 200
+
+2.Digitalizar la señal usando una frecuencia de muestreo de 4 veces la frecuencia de Nyquist
+
+tomando una frecuencia de muestreo de 800hz se realizo el siguiente codigo de captura de la señal EOG con daq
+
+```
+import numpy as np  
+import nidaqmx
+from nidaqmx.constants import AcquisitionType, READ_ALL_AVAILABLE
+import matplotlib.pyplot as plt
+
+rate = 800.0  # Hz
+duration = 5  # segundos
+muestras = int(rate * duration)
+
+with nidaqmx.Task() as task:
+    task.ai_channels.add_ai_voltage_chan("Dev2/ai1")
+    task.timing.cfg_samp_clk_timing(rate, sample_mode=AcquisitionType.FINITE, samps_per_chan=muestras)
+    data = task.read(READ_ALL_AVAILABLE)
+    plt.plot(data)
+    plt.ylabel('Amplitud')
+    plt.title('señal EOG')
+    plt.ylim(-3, 3) 
+    plt.show()
+    
+np.savetxt(r"C:\Users\USUARIO\Desktop\datos_parteC2.csv", data, delimiter=",")
+```
+Y su visualizacion en Colab con una grafica mas comoda de ver con el codigo:
+
+```
+graficacaptura = pd.read_csv("/content/drive/Shareddrives/Labs procesamiento de señales/Lab 2/datos_parteC3.csv")
+
+# Graficar la señal
+plt.figure(figsize=(15, 3)) # Increased the width to 12
+plt.plot(graficacaptura, label="Señal ECG")
+plt.xlabel("(800muestras/seg)")
+plt.ylabel("Amplitud (V)")
+plt.title("Señal EOG Capturada")
+plt.legend()
+plt.show()
+```
 
 3.Caracterizar la señal obteninedo:
 
