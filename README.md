@@ -19,25 +19,23 @@ señal x[n] = {dígitos de la cédula de ciudadania} cada integrante del grupo, 
 1.Encuentrar la señal 𝑦[𝑛] resultante de la convolución usando sumatorias (a
 mano).
 Integranre 1 Braian
-Integrante 2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 40 27_a37c1d32](https://github.com/user-attachments/assets/1de222bf-f5a7-46de-a49a-6d60c41e831b)
+Integrante 2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 41 22_a929636c](https://github.com/user-attachments/assets/10aed1f4-14e1-4db8-a4b4-debe90bb5238)
-
-
 Integrante 3 David
+![Imagen de WhatsApp 2025-09-20 a las 20 02 44_d0926bb0](https://github.com/user-attachments/assets/e2c0794a-9709-41ed-bc54-5b0604fae241)
 
 2.Encontrar la representación gráfica y secuencial (a mano). 
 
 A continuación se adjuntaran imágenes de los procedimientos que realizó cada uno de los integrantes para el desarrollo de los numerales 1 y 2.
 
 Integrante1-Braian 
-
-Integrante2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 41 22_7997f000](https://github.com/user-attachments/assets/c685442e-bb02-4662-9a99-7776213845ca)
+Integrante2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 41 21_2be94dd1](https://github.com/user-attachments/assets/4eb5fd1d-0da2-4903-944f-0e169ee848dd)
-
-
 Integrante3 David
+![Imagen de WhatsApp 2025-09-20 a las 20 08 30_8b56eadb](https://github.com/user-attachments/assets/cd572aee-5365-47ef-9286-39ee21280821)
+
 
 3.Encontrar la señal 𝑦[𝑛] resultante de la convolución usando Python
 
