@@ -32,9 +32,10 @@ Integrante 3 David
 A continuación se adjuntaran imágenes de los procedimientos que realizó cada uno de los integrantes para el desarrollo de los numerales 1 y 2.
 
 Integrante1-Braian 
-![Imagen de WhatsApp 2025-09-20 a las 19 41 22_7997f000](https://github.com/user-attachments/assets/c685442e-bb02-4662-9a99-7776213845ca)
+
 Integrante2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 41 21_2be94dd1](https://github.com/user-attachments/assets/4eb5fd1d-0da2-4903-944f-0e169ee848dd)
+![Imagen de WhatsApp 2025-09-20 a las 19 41 22_7997f000](https://github.com/user-attachments/assets/c685442e-bb02-4662-9a99-7776213845ca)
 Integrante3 David
 ![Imagen de WhatsApp 2025-09-20 a las 20 08 30_8b56eadb](https://github.com/user-attachments/assets/cd572aee-5365-47ef-9286-39ee21280821)
 
