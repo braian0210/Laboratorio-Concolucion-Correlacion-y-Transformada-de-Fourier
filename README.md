@@ -167,6 +167,70 @@ y1(n) = {5, 6, 10, 47, 75, 42, 38, 117, 108, 41, 38, 76, 18, 24, 6, 0}
 
 Integrante3 Angélica
 
+```
+import numpy as np
+import matplotlib.pyplot as plt
+h1 = np.array([5, 6, 0, 0, 8, 5, 8])
+x1 = np.array([1, 0, 5, 0, 6, 0, 4, 4, 7, 5])
+y1 = np.convolve(h1, x1, mode='full')
+print("h1(n) =", h1)
+print("x1(n) =", x1)
+print("\n" + "="*50)
+print("\nResultado De La Concolución:")
+print("y1(n) = {", end="")
+for i, valor in enumerate(y1):
+    if i < len(y1) - 1:
+        print(f"{int(valor)}, ", end="")
+    else:
+        print(f"{int(valor)}", end="")
+print("}")
+# Graficar las secuencias
+plt.figure(figsize=(12, 10))
+# Para h(n)
+plt.subplot(3, 1, 1)
+plt.stem(range(len(h1)), h1, basefmt='k-', linefmt='b-', markerfmt='bo')
+plt.title('h1(n) = {5, 6, 0, 0, 8, 5, 8}')
+plt.xlabel('n')
+plt.ylabel('Amplitud')
+plt.grid(True, alpha=0.3)
+plt.xlim(-1, len(h1))
+
+# Para x(n)
+plt.subplot(3, 1, 2)
+plt.stem(range(len(x1)), x1, basefmt='k-', linefmt='g-', markerfmt='go')
+plt.title('x1(n) = {1, 0, 5, 0, 6, 0, 4, 4, 7, 5}')
+plt.xlabel('n')
+plt.ylabel('Amplitud')
+plt.grid(True, alpha=0.3)
+plt.xlim(-1, len(x1))
+
+# Subplot para y1(n) - convolución
+plt.subplot(3, 1, 3)
+plt.stem(range(len(y1)), y1, basefmt='k-', linefmt='r-', markerfmt='ro')
+plt.title('y1(n) = h1(n) * x1(n) (Convolución)')
+plt.xlabel('n')
+plt.ylabel('Amplitud')
+plt.grid(True, alpha=0.3)
+plt.xlim(-1, len(y1))
+
+plt.tight_layout()
+plt.show()
+```
+
+Obteniendo
+```
+h1(n) = [5 6 0 0 8 5 8]
+x1(n) = [1 0 5 0 6 0 4 4 7 5]
+
+==================================================
+
+Resultado De La Concolución:
+y1(n) = {5, 6, 25, 30, 38, 41, 68, 69, 147, 97, 110, 52, 108, 107, 81, 40}
+```
+
+<img width="737" height="610" alt="image" src="https://github.com/user-attachments/assets/c922797f-19c1-44f7-94c5-db1d90674b16" />
+
+
 Parte B
 
 Para la parte b de la práctica, se definiran las señales 𝑥1[𝑛𝑇𝑠] = cos(2𝜋100𝑛𝑇𝑠) 𝑝𝑎𝑟𝑎 0 ≤ 𝑛 < 9, 𝑥2[𝑛𝑇𝑠] = sin(2𝜋100𝑛𝑇𝑠) 𝑝𝑎𝑟𝑎 0 ≤ 𝑛 < 9 para 𝑇𝑠 = 1.25𝑚s, con el fin de encontar lo siguiente:
