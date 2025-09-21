@@ -246,8 +246,39 @@ Parte B
 Para la parte b de la práctica, se definiran las señales 𝑥1[𝑛𝑇𝑠] = cos(2𝜋100𝑛𝑇𝑠) 𝑝𝑎𝑟𝑎 0 ≤ 𝑛 < 9, 𝑥2[𝑛𝑇𝑠] = sin(2𝜋100𝑛𝑇𝑠) 𝑝𝑎𝑟𝑎 0 ≤ 𝑛 < 9 para 𝑇𝑠 = 1.25𝑚s, con el fin de encontar lo siguiente:
 
 1.Encontrar la correlación cruzada entre ambas señales
+```
+from re import S
+
+Ts = 0.00125   # milisegundos
+n = np.arange(0, 9)   # 0 <= n < 9
+f = 100               # frecuencia en Hz
+w = 2 * np.pi * f
+
+t = n * Ts
+x1 = np.cos(w * n * Ts)
+x2 = np.sin(w * n * Ts)
+
+# Correlación cruzada
+r = np.correlate(x1, x2, mode="full")
+lags = np.arange(-len(x2)+1, len(x1))
+
+print(lags)
+print(r)
+
+# Gráfico de la correlación
+plt.stem(lags, r, basefmt=" ")
+plt.xlabel("Lag (muestras)")
+plt.ylabel("r_xy[L]")
+plt.title("Correlación cruzada entre x1 y x2")
+plt.grid(True)
+plt.show()
+```
+<img width="598" height="566" alt="image" src="https://github.com/user-attachments/assets/85446809-aaec-42f9-9e23-b783f02ea058" />
+
 
 2.Encontrar la representación gráfica y describa la secuencia resultante. 
+```
+```
 
 3.Responder ¿En qué situaciones resulta útil aplicar la correlación cruzada en
 el procesamiento digital de señales? 
