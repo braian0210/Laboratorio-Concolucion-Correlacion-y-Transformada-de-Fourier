@@ -276,7 +276,40 @@ plt.show()
 
 2.Encontrar la representación gráfica y describa la secuencia resultante. 
 ```
+from re import S
+
+Ts = 0.00125   # milisegundos
+n = np.arange(0, 9)   # 0 <= n < 9
+f = 100               # frecuencia en Hz
+w = 2 * np.pi * f
+
+t = n * Ts
+x1 = np.cos(w * n * Ts)
+x2 = np.sin(w * n * Ts)
+
+
+df = pd.DataFrame({
+    "n": n,
+    "t_s": t,
+    "t_ms": t * 1e3,
+    "x1_cos": x1,
+    "x2_sin": x2
+})
+df.to_csv('signals_x1_x2.csv', index=False)
+
+plt.figure(figsize=(8,4))
+plt.plot(t, x1, marker='o', label='x1[nTs] = cos(2π100 n Ts)')
+plt.plot(t, x2, marker='s', label='x2[nTs] = sin(2π100 n Ts)')
+plt.xlabel('t (s)')
+plt.ylabel('Amplitud')
+plt.title('Señales muestreadas: x1 y x2 (Ts = 1.25 ms)')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
 ```
+<img width="819" height="381" alt="image" src="https://github.com/user-attachments/assets/fbfe109d-5c84-4bf9-b2ce-06c76d07c6d5" />
+
 
 3.Responder ¿En qué situaciones resulta útil aplicar la correlación cruzada en
 el procesamiento digital de señales? 
