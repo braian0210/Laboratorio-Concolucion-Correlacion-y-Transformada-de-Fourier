@@ -10,6 +10,7 @@ respuesta de un sistema discreto ante una entrada determinada.
 dominio de la frecuencia. 
 
 Resumen
+![Imagen de WhatsApp 2025-09-21 a las 14 49 41_681c2cf7](https://github.com/user-attachments/assets/18f62e49-9f34-4c48-a2a2-a87ecaa96527)
 
 Parte A
 
@@ -327,13 +328,17 @@ plt.show()
 3.Responder ¿En qué situaciones resulta útil aplicar la correlación cruzada en
 el procesamiento digital de señales? 
 
+Para saber en qué situación es útil la correlación cruzada debemos entender a que se refiere y esta es una métrica que mide las similitudes en función al desplazamiento o desfase temporal, donde son tomadas dos señales y se Desplaza una con respecto a la otra después se calcula coeficiente de correlación en cada desfase, al final el resultado es una función donde se hay un valor alto demuestra una alta similitud del desfase.
+Sabiendo esto ya lo podemos aplicar a nuestro ámbito para saber en qué situación puede sernos útil, al realizar la correlación podemos detectar patrones, y si correlacionamos una señal conocida podemos hallar ruido u otras variables que contaminen una señal. también funciona para sincronización de señales esto usado en varios elementos como los polígrafos que reciben varias señales de distintas fuentes sin embargo se necesita relacionarlas para saber si realmente la persona está mintiendo.
+
+
 Parte C
 
 Para la parte c, con ayuda del generador de señales biológicas, se generará una señal biológica Eog, con el fin de:
 
 1.Determinar la frecuencia de Nyquist para la señal generada
 
-Tomando la frecuencia maxima de 100 y como Fnyquist es 2 veces Fmaxima, entonces Fnyquist es de 200
+Tomando la frecuencia maxima de 100 y como Nyquist es 2 veces Fmaxima, entonces Nyquist es de 200
 
 2.Digitalizar la señal usando una frecuencia de muestreo de 4 veces la frecuencia de Nyquist
 
