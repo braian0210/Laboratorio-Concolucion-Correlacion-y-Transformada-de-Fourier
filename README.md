@@ -20,8 +20,8 @@ Este laboratorio nos permitió comprender el uso de cada herramienta para el an�
 Vocabulario clave:
 Convolución: Operación que describe la respuesta de un sistema al cual le han ingresado una señal
 Correlación cruzada: Medida de relación entre dos señales
-Transformada de Fourier: Análisis de señales en el dominio de la frecuencia
- Frecuencia de Nyquist: 2 veces la frecuencia máxima de la señal
+Transformada de Fourier: Análisis de señales en el dominio de la frecuencia, revelando sus componentes de amplitud y fase en diferentes frecuencias
+Frecuencia de Nyquist: 2 veces la frecuencia máxima de la señal
 EOG: Electrooculograma examen que mide la actividad eléctrica de los músculos que mueven los ojos, en el laboratorio usamos las señales ya tomadas 
 
 Diagrama de flujo
