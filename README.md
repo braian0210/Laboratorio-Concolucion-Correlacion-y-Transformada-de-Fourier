@@ -18,6 +18,7 @@ señal x[n] = {dígitos de la cédula de ciudadania} cada integrante del grupo, 
 
 1.Encuentrar la señal 𝑦[𝑛] resultante de la convolución usando sumatorias (a
 mano).
+
 Integranre 1 Braian
 
 Integrante 2 Angélica
