@@ -375,6 +375,8 @@ plt.title("Señal EOG Capturada")
 plt.legend()
 plt.show()
 ```
+<img width="1245" height="316" alt="image" src="https://github.com/user-attachments/assets/72eba35b-6fc7-4c11-87e8-45d7c93457d9" />
+
 
 3.Caracterizar la señal obteninedo:
 
@@ -404,26 +406,149 @@ print(f"Desviación estándar: {desviacion_graficacaptura:.6f}")
 
 
 
-máximo, mínimo, convolución,  correlación y transformada de Fourier.
+d.máximo y mínimo 
+```
+maximo = np.max(graficacaptura)
+minimo = np.min(graficacaptura)
 
-b.Clasificar la señal según su tipo (determinística/aleatoria,
-periódica/aparádica, analógica/digital).
+print(f"Valor máximo de la señal: {maximo:.6f}")
+print(f"Valor mínimo de la señal: {minimo:.6f}")
+```
+<img width="303" height="42" alt="image" src="https://github.com/user-attachments/assets/b67ee4f9-d9a1-4a7d-b3e3-0f704a015d25" />
+
+e.convolución
+```
+filtroparaconvolucion = np.ones(5) / 5
+convolucion = np.convolve(x, h, mode="same")
+print(f"convolucion ={convolucion}")
+```
+<img width="662" height="45" alt="image" src="https://github.com/user-attachments/assets/4392e28b-c977-41ef-972e-bc972a38433b" />
+
+correlación
+```
+corr = np.correlate(x, x, mode="full")
+lags = np.arange(-len(x) + 1, len(x))
+
+# 3) Graficar
+plt.figure(figsize=(12,4))
+plt.plot(lags, corr)
+plt.title("correlación de la señal")
+plt.xlabel("Desplazamiento (lags)")
+plt.ylabel("Correlación")
+plt.grid(True)
+plt.show()
+```
+<img width="996" height="393" alt="image" src="https://github.com/user-attachments/assets/1ec67694-37de-4f2e-a4c3-d32580cae76d" />
+
+transformada de Fourier.
+```
+data = pd.read_csv("/content/drive/Shareddrives/Labs procesamiento de señales/Lab 2/EOG.txt")
+x = data.iloc[:, 0].values
+
+fs = 800
+N = len(x)
+duracion = N / fs
+Xfurier = np.fft.rfft(x)
+f = np.fft.rfftfreq(N, d=1/fs)
+mag = np.abs(Xfurier)
+P = (np.abs(Xfurier)**2) / N
+
+plt.figure(figsize=(8, 5))
+plt.plot(f, mag, color="Cyan", label="FFT (magnitud)")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Magnitud")
+plt.title("Transformada de Fourier")
+plt.legend()
+plt.grid(True)
+plt.axis([1, 30, 0, 100])  # Explicitly set x-axis to match your expected range
+plt.show()
+```
+<img width="704" height="470" alt="image" src="https://github.com/user-attachments/assets/9f85c4ec-2c35-4682-aa90-ca77f90a913f" />
+
+b.Clasificar la señal según su tipo (determinística/aleatoria, periódica/aparádica, analógica/digital).
+
+Es una señal determinista puesto que posee un patron en su figura a pesar de ciertas variaciones durante cada ciclo probablemente por medicion y porque inconcientemente es imposible caracterizarla de otra forma al ser generada por un equipo La señal es periodica puesto que repite un mismo ciclo constantemente es una señal digital que intenta imitar una señal analogica ocular provocando que represente las componentes fisiologicas pero sin la capacidad de imitar la variabilidad del EOG tomado directamente
 
 4.Aplicar la Transformada de Fourier a la señal y graficar:
 
 a.La transformada de la señal
+```
+data = pd.read_csv("/content/drive/Shareddrives/Labs procesamiento de señales/Lab 2/EOG.txt")
+x = data.iloc[:, 0].values
+
+fs = 800
+N = len(x)
+duracion = N / fs
+Xfurier = np.fft.rfft(x)
+f = np.fft.rfftfreq(N, d=1/fs)
+mag = np.abs(Xfurier)
+P = (np.abs(Xfurier)**2) / N
+
+plt.figure(figsize=(8, 5))
+plt.plot(f, mag, color="Cyan", label="FFT (magnitud)")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Magnitud")
+plt.title("Transformada de Fourier")
+plt.legend()
+plt.grid(True)
+plt.axis([1, 30, 0, 100])  # Explicitly set x-axis to match your expected range
+plt.show()
+```
+<img width="704" height="470" alt="image" src="https://github.com/user-attachments/assets/8a07bd91-8a4f-42d6-9844-c9c2159ea07c" />
+
 
 b.Su densidad espectral de potencia
 
+```
+plt.figure(figsize=(8,5))
+plt.plot(f[:N//2], P[:N//2], color="Pink")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Potencia")
+plt.title("Densidad Espectral de Potencia (PSD)")
+plt.grid(True)
+plt.axis([1, 10, 0, 5])
+plt.show()
+```
 c.Analice los estadísticos en el dominio de la frecuencia:
 
 i.Frecuencia media
+```
+lim = f <= 30
+f_band = f[lim]
+mag_band = mag[lim]
+
+f_mean = np.sum(f_band * mag_band) / np.sum(mag_band)
+print(f"Frecuencia media (Hz): {f_mean:.4f}")
+```
+<img width="253" height="20" alt="image" src="https://github.com/user-attachments/assets/06b4da81-a627-4970-bc9d-8ec732081295" />
 
 ii.Frecuencia mediana
+```
+cum_energy = np.cumsum(mag_band) / np.sum(mag_band)
+f_median = f_band[np.where(cum_energy >= 0.5)[0][0]]
+print(f"Frecuencia mediana (Hz): {f_median:.4f}")
+```
+<img width="261" height="20" alt="image" src="https://github.com/user-attachments/assets/80e53ba8-afad-48a2-8b47-951b8557e00d" />
 
 iii.Desviación estándar
+```
+f_standar = np.sqrt(np.sum(((f_band - f_mean)**2) * mag_band) / np.sum(mag_band))
+print(f"Desviación estándar de la frecuencia (Hz): {f_standar:.4f}")
+```
+<img width="408" height="20" alt="image" src="https://github.com/user-attachments/assets/c4c0e6a1-6436-4005-ba07-139825de2fda" />
 
 iv.Histograma de frecuencias
+```
+plt.figure(figsize=(8,4))
+plt.hist(f_band, bins=20, weights=mag_band, color="Red", alpha=0.7)
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Energía espectral")
+plt.title("Histograma de frecuencias (0–30 Hz)")
+plt.grid(True)
+plt.show()
+```
+<img width="696" height="393" alt="image" src="https://github.com/user-attachments/assets/159ddee1-028d-4183-8086-e692703f3811" />
+
 
 
 
