@@ -46,7 +46,6 @@ Integranre 1 Braian
 
 Integrante 2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 40 27_a37c1d32](https://github.com/user-attachments/assets/1de222bf-f5a7-46de-a49a-6d60c41e831b)
-![Imagen de WhatsApp 2025-09-20 a las 19 41 22_a929636c](https://github.com/user-attachments/assets/10aed1f4-14e1-4db8-a4b4-debe90bb5238)
 
 Integrante 3 David
 ![Imagen de WhatsApp 2025-09-20 a las 20 02 44_d0926bb0](https://github.com/user-attachments/assets/e2c0794a-9709-41ed-bc54-5b0604fae241)
@@ -62,8 +61,11 @@ Integrante1-Braian
 ![Imagen de WhatsApp 2025-09-21 a las 15 11 37_a2a36209](https://github.com/user-attachments/assets/81eea857-a327-4c9e-8985-ae4966f15951)
 
 Integrante2 Angélica
-![Imagen de WhatsApp 2025-09-20 a las 19 41 21_2be94dd1](https://github.com/user-attachments/assets/4eb5fd1d-0da2-4903-944f-0e169ee848dd)
-![Imagen de WhatsApp 2025-09-20 a las 19 41 22_7997f000](https://github.com/user-attachments/assets/c685442e-bb02-4662-9a99-7776213845ca)
+![Imagen de WhatsApp 2025-09-21 a las 18 52 21_bf292765](https://github.com/user-attachments/assets/1eda4b98-5106-45f8-9fbf-d45c49da6cc3)
+![Imagen de WhatsApp 2025-09-21 a las 18 52 21_aa98aa61](https://github.com/user-attachments/assets/37431bdd-5529-4f4c-8a72-2a17713367c6)
+![Imagen de WhatsApp 2025-09-21 a las 18 52 21_f774adfb](https://github.com/user-attachments/assets/2b3e4c45-33ad-492b-a500-15bf09e2cb49)
+
+
 Integrante3 David
 ![Imagen de WhatsApp 2025-09-21 a las 16 28 58_40080669](https://github.com/user-attachments/assets/3040a6b3-a940-4d63-a976-3ad59c89468d)
 ![Imagen de WhatsApp 2025-09-21 a las 16 28 57_f3e12df7](https://github.com/user-attachments/assets/379d289e-c839-492a-bbee-f5f6ef2512c5)
