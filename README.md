@@ -50,7 +50,8 @@ Integrante2 Angélica
 Integrante3 David
 ![Imagen de WhatsApp 2025-09-21 a las 16 28 58_40080669](https://github.com/user-attachments/assets/3040a6b3-a940-4d63-a976-3ad59c89468d)
 ![Imagen de WhatsApp 2025-09-21 a las 16 28 57_f3e12df7](https://github.com/user-attachments/assets/379d289e-c839-492a-bbee-f5f6ef2512c5)
-![Imagen de WhatsApp 2025-09-20 a las 20 08 30_8b56eadb](https://github.com/user-attachments/assets/cd572aee-5365-47ef-9286-39ee21280821)
+![Imagen de WhatsApp 2025-09-21 a las 16 26 16_5691e0ad](https://github.com/user-attachments/assets/50a79ac2-f72e-4713-b492-d1b8f33bae84)
+
 
 
 3.Encontrar la señal 𝑦[𝑛] resultante de la convolución usando Python
