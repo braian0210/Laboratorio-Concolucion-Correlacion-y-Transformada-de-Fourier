@@ -152,6 +152,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+Obteniendo
+
 ```
 h1(n) = [5 6 0 0 8 2 0]
 x1(n) = [1 0 2 7 5 2 2 9 0 3]
