@@ -25,9 +25,9 @@ A continuación se adjuntaran imágenes de los procedimientos que realizó cada 
 
 Integrante1-Braian 
 
-Integrante2 David
+Integrante2 Angélica
 
-Integrante3 Angélica
+Integrante3 David
 
 3.Encontrar la señal 𝑦[𝑛] resultante de la convolución usando Python
 
@@ -100,7 +100,7 @@ y1(n) = {5, 6, 0, 15, 56, 71, 44, 40, 110, 139, 68, 39, 69, 57, 31, 6}
 <img width="739" height="614" alt="image" src="https://github.com/user-attachments/assets/802bcb90-230d-4669-9763-03ec72e65e13" />
 
 
-Integrante2 David
+Integrante2 Angélica
 
 ```
 import numpy as np
@@ -165,7 +165,7 @@ y1(n) = {5, 6, 10, 47, 75, 42, 38, 117, 108, 41, 38, 76, 18, 24, 6, 0}
 <img width="736" height="613" alt="image" src="https://github.com/user-attachments/assets/25675f1e-d2b2-42fb-a0a9-cb40faf1ca2b" />
 
 
-Integrante3 Angélica
+Integrante3 David
 
 ```
 import numpy as np
