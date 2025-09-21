@@ -19,7 +19,12 @@ señal x[n] = {dígitos de la cédula de ciudadania} cada integrante del grupo, 
 1.Encuentrar la señal 𝑦[𝑛] resultante de la convolución usando sumatorias (a
 mano).
 
+A continuación se adjuntaran imágenes de los procedimientos que realizó cada uno de los integrantes para hallar y(n).
+
 Integranre 1 Braian
+
+![Imagen de WhatsApp 2025-09-21 a las 15 11 36_474db755](https://github.com/user-attachments/assets/f1193ea5-e684-4993-b127-9ced3238d82e)
+
 
 Integrante 2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 40 27_a37c1d32](https://github.com/user-attachments/assets/1de222bf-f5a7-46de-a49a-6d60c41e831b)
@@ -30,9 +35,13 @@ Integrante 3 David
 
 2.Encontrar la representación gráfica y secuencial (a mano). 
 
-A continuación se adjuntaran imágenes de los procedimientos que realizó cada uno de los integrantes para el desarrollo de los numerales 1 y 2.
+A continuación se adjuntaran imágenes de las gráficas que realizó cada uno de los integrantes. 
 
 Integrante1-Braian 
+
+![Imagen de WhatsApp 2025-09-21 a las 15 14 31_676438b0](https://github.com/user-attachments/assets/f6c50152-a327-4b3e-a1af-0e33a8f24b03)
+
+![Imagen de WhatsApp 2025-09-21 a las 15 11 37_a2a36209](https://github.com/user-attachments/assets/81eea857-a327-4c9e-8985-ae4966f15951)
 
 Integrante2 Angélica
 ![Imagen de WhatsApp 2025-09-20 a las 19 41 21_2be94dd1](https://github.com/user-attachments/assets/4eb5fd1d-0da2-4903-944f-0e169ee848dd)
