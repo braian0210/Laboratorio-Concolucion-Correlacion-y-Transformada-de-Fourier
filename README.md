@@ -332,7 +332,33 @@ plt.show()
 
 3.Caracterizar la señal obteninedo:
 
-a.Media, mediana, desviación estándar, máximo, mínimo, convolución,  correlación y transformada de Fourier.
+a.Media
+```
+media_graficacaptura=np.mean(graficacaptura)
+print(f"media de la señal:{mean_graficacaptura:.6f}")
+```
+<img width="242" height="33" alt="image" src="https://github.com/user-attachments/assets/3e3d2bc4-48ce-4deb-97bb-7c9385e26b17" />
+
+b.mediana
+```
+mediana_graficacaptura = np.median(graficacaptura)
+print(f"Mediana de la señal: {median_graficacaptura:.6f}")
+```
+<img width="227" height="23" alt="image" src="https://github.com/user-attachments/assets/43f15f47-489f-4e58-8fd9-a4f1ceb25faf" />
+
+c.desviación estándar
+```
+valores = graficacaptura.iloc[:,0].to_numpy()
+
+desviacion_graficacaptura = np.std(valores)
+
+print(f"Desviación estándar: {desviacion_graficacaptura:.6f}")
+```
+<img width="219" height="20" alt="image" src="https://github.com/user-attachments/assets/761c669a-fc64-4e89-b227-9a93681f68ba" />
+
+
+
+máximo, mínimo, convolución,  correlación y transformada de Fourier.
 
 b.Clasificar la señal según su tipo (determinística/aleatoria,
 periódica/aparádica, analógica/digital).
