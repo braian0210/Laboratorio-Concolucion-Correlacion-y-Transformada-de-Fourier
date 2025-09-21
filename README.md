@@ -10,6 +10,23 @@ respuesta de un sistema discreto ante una entrada determinada.
 dominio de la frecuencia. 
 
 Resumen
+En la presente practica se usaron 3 técnicas necesarias para el procesamiento digital de señales la cuales son convolución, correlación y transformada de Fourier, cada una de estas nos brinda información y herramientas importantes para entender de manera correcta las señales 
+En la parte A del laboratorio se calculo la convolución de sistema h[n] y una señal x[n] tanto a mano como en Python, se realizo 3 veces con los daros de cada integrante del grupo, además se graficaron el sistema, la señal y la señal convolucionada.
+En la parte B se definió unas señales seno y coseno y realizamos la correlación cruzada de las señales para su posterior análisis de desfase y similitud.
+Por ultimo en la parte C capturamos una señal biológica de EOG, gracias a la utilización del DAQ, determinando la frecuencia de Nyquist, caracterizada  en el tiempo mediante la transformada de Fourier y su densidad espectral.
+Este laboratorio nos permitió comprender el uso de cada herramienta para el análisis de señales especialmente las biológicas.
+
+
+Vocabulario clave:
+Convolución: Operación que describe la respuesta de un sistema al cual le han ingresado una señal
+Correlación cruzada: Medida de relación entre dos señales
+Transformada de Fourier: Análisis de señales en el dominio de la frecuencia
+ Frecuencia de Nyquist: 2 veces la frecuencia máxima de la señal
+EOG: Electrooculograma examen que mide la actividad eléctrica de los músculos que mueven los ojos, en el laboratorio usamos las señales ya tomadas 
+
+Diagrama de flujo
+
+
 ![Imagen de WhatsApp 2025-09-21 a las 14 49 41_681c2cf7](https://github.com/user-attachments/assets/18f62e49-9f34-4c48-a2a2-a87ecaa96527)
 
 Parte A
