@@ -87,7 +87,17 @@ plt.tight_layout()
 plt.show()
 ```
 
+Obteniendo
+
 ```
+h1(n) = [5 6 0 0 8 5 3]
+x1(n) = [1 0 0 3 6 6 1 2 7 2]
+==================================================
+Resultado De La Concolución:
+y1(n) = {5, 6, 0, 15, 56, 71, 44, 40, 110, 139, 68, 39, 69, 57, 31, 6}
+
+<img width="739" height="614" alt="image" src="https://github.com/user-attachments/assets/bc7a89cc-a897-4d70-89ff-57d604b3674a" />
+
 
 
 ```
