@@ -509,6 +509,10 @@ plt.grid(True)
 plt.axis([1, 10, 0, 5])
 plt.show()
 ```
+
+<img width="686" height="470" alt="image" src="https://github.com/user-attachments/assets/5ef855bc-e407-4bc9-8951-fcdd56c5b234" />
+
+
 c.Analice los estadísticos en el dominio de la frecuencia:
 
 i.Frecuencia media
