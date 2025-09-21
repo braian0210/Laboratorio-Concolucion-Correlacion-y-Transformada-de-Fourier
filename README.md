@@ -101,6 +101,68 @@ y1(n) = {5, 6, 0, 15, 56, 71, 44, 40, 110, 139, 68, 39, 69, 57, 31, 6}
 
 
 Integrante2 David
+```
+import numpy as np
+import matplotlib.pyplot as plt
+h1 = np.array([5, 6, 0, 0, 8, 2, 0])
+x1 = np.array([1, 0, 2, 7, 5, 2, 2, 9, 0, 3])
+y1 = np.convolve(h1, x1, mode='full')
+print("h1(n) =", h1)
+print("x1(n) =", x1)
+print("\n" + "="*50)
+print("\nResultado De La Concolución:")
+print("y1(n) = {", end="")
+for i, valor in enumerate(y1):
+    if i < len(y1) - 1:
+        print(f"{int(valor)}, ", end="")
+    else:
+        print(f"{int(valor)}", end="")
+print("}")
+# Graficar las secuencias
+plt.figure(figsize=(12, 10))
+# Para h(n)
+plt.subplot(3, 1, 1)
+plt.stem(range(len(h1)), h1, basefmt='k-', linefmt='b-', markerfmt='bo')
+plt.title('h1(n) = {5, 6, 0, 0, 8, 2, 0}')
+plt.xlabel('n')
+plt.ylabel('Amplitud')
+plt.grid(True, alpha=0.3)
+plt.xlim(-1, len(h1))
+
+# Para x(n)
+plt.subplot(3, 1, 2)
+plt.stem(range(len(x1)), x1, basefmt='k-', linefmt='g-', markerfmt='go')
+plt.title('x1(n) = {1, 0, 2, 7, 5, 2, 2, 9, 0, 3}')
+plt.xlabel('n')
+plt.ylabel('Amplitud')
+plt.grid(True, alpha=0.3)
+plt.xlim(-1, len(x1))
+
+# Subplot para y1(n) - convolución
+plt.subplot(3, 1, 3)
+plt.stem(range(len(y1)), y1, basefmt='k-', linefmt='r-', markerfmt='ro')
+plt.title('y1(n) = h1(n) * x1(n) (Convolución)')
+plt.xlabel('n')
+plt.ylabel('Amplitud')
+plt.grid(True, alpha=0.3)
+plt.xlim(-1, len(y1))
+
+plt.tight_layout()
+plt.show()
+```
+
+```
+h1(n) = [5 6 0 0 8 2 0]
+x1(n) = [1 0 2 7 5 2 2 9 0 3]
+
+==================================================
+
+Resultado De La Concolución:
+y1(n) = {5, 6, 10, 47, 75, 42, 38, 117, 108, 41, 38, 76, 18, 24, 6, 0}
+```
+
+<img width="736" height="613" alt="image" src="https://github.com/user-attachments/assets/25675f1e-d2b2-42fb-a0a9-cb40faf1ca2b" />
+
 
 Integrante3 Angélica
 
